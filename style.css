@@ -4,7 +4,12 @@
 -- FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
--- FONT-WRIGHT:
+-- FONT FAMILY:
+
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+
+-- FONT-WEIGHT:
 Default: 400 
   Medium: 500 
   Semi-bold: 600 
@@ -168,3 +173,25 @@ a:visited {
 }
 
 /* Hero Section  */
+
+.hero-section {
+  display: flex;
+  gap: 4rem;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.primary-heading {
+  font-size: 5.2rem;
+  font-family: 'Playfair Display', serif;
+  line-height: 6.2rem;
+}
+
+.hero-text {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
