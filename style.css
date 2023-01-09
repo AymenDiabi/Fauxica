@@ -148,7 +148,7 @@ a:visited {
  /* Landing Page Section  */
 
 .container {
-  width: 85vw;
+  max-width: 120rem;
   margin-inline: auto;
 }
 
@@ -171,7 +171,7 @@ a:visited {
   font-size: 1.6rem;
   display: flex;
   flex-direction: row;
-  gap: 3.6rem;
+  gap: 4.1em;
 }
 
 .nav-list-link:link,
@@ -183,7 +183,7 @@ a:visited {
 
 .hero-section {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   margin-top: 10rem;
 }
 
@@ -191,6 +191,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 45%;
 }
 
 .primary-heading {
@@ -221,7 +222,7 @@ a:visited {
 .btn-one:visited {
   font-size: 1.8rem;
   font-weight: 700;
-  padding: 1.4rem 2.5rem;
+  padding: 1em 2em;
   background-color: #f2f0df;
   border-radius: 1.9rem;
 }
@@ -230,7 +231,32 @@ a:visited {
 .btn-two:visited {
   font-size: 1.6rem;
   text-decoration: underline;
+  position: relative;
 }
+
+.btn-two:link span {
+  position: absolute;
+  top: -3px;
+  font-size: 1.8rem;
+  transition: all .4s;
+}
+
+.btn-two:link:hover span {
+  padding-left: 6px;
+}
+
+/* .btn-two::after {
+  content: "→";
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.8rem;
+  top: -3px;
+}
+
+.btn-two:hover.btn-two::after,
+.btn-two:active.btn-two::after {
+  right: -25px;
+} */
 
 .announce-box {
   display: flex;
@@ -253,6 +279,19 @@ a:visited {
 .announcement-text {
   font-size: 1.4rem;
   line-height: 2.2rem;
+}
+
+
+/* Right Hero */
+
+.images-wrapper {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img--1 {
+  grid-row: 1 / 3;
 }
 
 
