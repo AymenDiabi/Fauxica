@@ -54,8 +54,8 @@ Instead, 1em = 16px
 */
 
 :root {
-  --fm-1: 'Playfair Display', serif;
-  --fm-2: 'Poppins', sans-serif;
+  --fm-1: "Playfair Display", serif;
+  --fm-2: "Poppins", sans-serif;
 }
 
 html {
@@ -95,8 +95,8 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -145,7 +145,7 @@ a:visited {
   text-decoration: none;
 }
 
- /* Landing Page Section  */
+/* Landing Page Section  */
 
 .container {
   max-width: 120rem;
@@ -238,7 +238,7 @@ a:visited {
   position: absolute;
   top: -3px;
   font-size: 1.8rem;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .btn-two:link:hover span {
@@ -268,7 +268,6 @@ a:visited {
   line-height: 2.2rem;
 }
 
-
 /* Right Hero */
 
 .hero-right {
@@ -280,7 +279,7 @@ a:visited {
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  grid-template-areas: 
+  grid-template-areas:
     "left right"
     "left right";
 }
@@ -312,4 +311,42 @@ a:visited {
   justify-self: self-start;
 }
 
+.card-info {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: .2rem 5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+    "brand price"
+    "text price"
+  ;
+  margin-bottom: 1rem;
+}
 
+.brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  grid-area: brand;
+}
+.type-txt {
+  font-size: 1rem;
+  grid-area: text;
+}
+.price {
+  font-size: 1.2rem;
+  grid-area: price;
+  align-self: center;
+  position: relative;
+}
+
+.price::before {
+  content: '';
+  height: 3rem;
+  width: 1px;
+  background-color: #e4e4e4;
+  position: absolute;
+  top: -30%;
+  left: -50%;
+}
