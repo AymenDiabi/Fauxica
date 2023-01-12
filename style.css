@@ -249,6 +249,7 @@ a:visited {
 .btn-one:hover {
   bottom: 8%;
   box-shadow: 0px 10px 10px rgb(0 0 0 / 10%);
+  background-color: #e2d1bd;
 }
 
 .btn-two:link,
@@ -313,26 +314,36 @@ a:visited {
   justify-content: center;
   align-items: flex-end;
   background-position: center;
-  background-size: cover;
+  background-size: 150%;
   width: 70%;
   border-radius: 1.9rem;
+  overflow: hidden;
+  transition: all .3s;
 }
 
+
 .card--1 {
-  background-image: url("images/clothing3.jpg");
+  background-image: url("images/clothing1.jpg");
   justify-self: self-end;
   grid-area: left;
   height: 40rem;
 }
 
 .card--2 {
-  background-image: url("images/clothing1.jpg");
+  background-image: url("images/clothing3.jpg");
   justify-self: self-start;
 }
 
 .card--3 {
   background-image: url("images/clothing2.jpg");
   justify-self: self-start;
+}
+
+.card--1:hover, .card--1:active, 
+.card--2:hover, .card--2:active, 
+.card--3:hover, .card--3:active 
+{
+  background-size: 160%;
 }
 
 .card-info {
@@ -347,6 +358,13 @@ a:visited {
     "text price"
   ;
   margin-bottom: 1rem;
+  transition: bottom .3s;
+  position: relative;
+  bottom: 0;
+}
+
+.card:hover .card-info {
+  bottom: 1.5rem;
 }
 
 .brand {
@@ -354,10 +372,12 @@ a:visited {
   font-weight: 700;
   grid-area: brand;
 }
+
 .type-txt {
   font-size: 1rem;
   grid-area: text;
 }
+
 .price {
   font-size: 1.2rem;
   grid-area: price;
