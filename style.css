@@ -280,6 +280,14 @@ a:visited {
   box-shadow: 15px 9px 30px rgba(160, 160, 160, 0.25);
   padding: 3rem;
   border-radius: 1.9rem;
+  position: relative;
+}
+
+.announce-box::before {
+  content: url("images/confetti.svg");
+  position: absolute;
+  top: -1.1rem;
+  left: -2.4rem;
 }
 
 .fiftyk {
@@ -317,7 +325,6 @@ a:visited {
   background-size: 150%;
   width: 70%;
   border-radius: 1.9rem;
-  overflow: hidden;
   transition: all .3s;
 }
 
@@ -327,6 +334,14 @@ a:visited {
   justify-self: self-end;
   grid-area: left;
   height: 40rem;
+  position: relative;
+}
+
+.card--1::before {
+  content: url("images/tag.svg");
+  position: absolute;
+  top: -5rem;
+  left: -7.5rem;
 }
 
 .card--2 {
